@@ -1,0 +1,164 @@
+{
+  "version": "1.0",
+  "research_basis": "Klinger, Khwaja & LaMonte (2013), 'Improving Credit Risk Analysis with Psychometrics in Peru', IDB Working Paper IDB-WP-587. Item categories adapted from Big Five (Goldberg, 1992), behavioral economics (Kahneman & Tversky 1979 prospect theory; Frederick, Loewenstein, O'Donoghue 2002 time discounting), and Mischel's marshmallow paradigm.",
+  "scoring_note": "Each item maps to a behavioral construct. Higher score on a construct = lower predicted default risk per the Klinger findings (conscientiousness, future-orientation, fluid intelligence dominate in low-information markets).",
+  "languages": ["en", "hi"],
+  "questions": [
+    {
+      "id": "td_1",
+      "construct": "psy_time_discount",
+      "research_ref": "Frederick, Loewenstein, O'Donoghue (2002)",
+      "type": "binary_choice",
+      "scoring": {"A": 0.0, "B": 1.0},
+      "prompts": {
+        "en": "You receive INR 10,000 unexpectedly. Would you rather: (A) Spend it now on a new TV, or (B) Save it for the next harvest / lean season?",
+        "hi": "आपको अचानक 10,000 रुपये मिलते हैं। आप क्या करेंगे? (A) अभी एक नया टीवी खरीदेंगे, या (B) अगली फसल / कठिन मौसम के लिए बचाकर रखेंगे?"
+      },
+      "options": {
+        "A": {"en": "Spend it now on a TV", "hi": "अभी टीवी पर खर्च करें"},
+        "B": {"en": "Save for next season", "hi": "अगले सीज़न के लिए बचाएं"}
+      }
+    },
+    {
+      "id": "td_2",
+      "construct": "psy_time_discount",
+      "research_ref": "Mischel et al. (1972), delayed gratification paradigm",
+      "type": "binary_choice",
+      "scoring": {"A": 0.0, "B": 1.0},
+      "prompts": {
+        "en": "Would you rather have INR 1,000 today, or INR 1,200 one month from today?",
+        "hi": "आप क्या लेना पसंद करेंगे: आज 1,000 रुपये, या आज से एक महीने बाद 1,200 रुपये?"
+      },
+      "options": {
+        "A": {"en": "INR 1,000 today", "hi": "आज 1,000 रुपये"},
+        "B": {"en": "INR 1,200 in 1 month", "hi": "एक महीने में 1,200 रुपये"}
+      }
+    },
+    {
+      "id": "rt_1",
+      "construct": "psy_risk_tolerance",
+      "research_ref": "Kahneman & Tversky (1979) prospect theory",
+      "type": "binary_choice",
+      "scoring": {"A": 0.4, "B": 0.7},
+      "prompts": {
+        "en": "Which would you choose? (A) A guaranteed INR 1,000, or (B) A 50% chance of winning INR 2,500 and 50% chance of nothing.",
+        "hi": "आप क्या चुनेंगे? (A) निश्चित 1,000 रुपये, या (B) 50% मौका 2,500 रुपये जीतने का और 50% मौका कुछ न मिलने का।"
+      },
+      "options": {
+        "A": {"en": "Guaranteed INR 1,000", "hi": "निश्चित 1,000 रुपये"},
+        "B": {"en": "50% chance of INR 2,500", "hi": "2,500 रुपये का 50% मौका"}
+      }
+    },
+    {
+      "id": "rt_2",
+      "construct": "psy_risk_tolerance",
+      "research_ref": "Holt & Laury (2002) lottery-choice elicitation",
+      "type": "scale_4",
+      "scoring": {"1": 0.2, "2": 0.5, "3": 0.7, "4": 0.9},
+      "prompts": {
+        "en": "On a scale of 1-4, how comfortable are you taking financial risks? (1 = avoid all risk, 4 = comfortable with risk)",
+        "hi": "1-4 के पैमाने पर, आप वित्तीय जोखिम लेने में कितने सहज हैं? (1 = बिल्कुल जोखिम न लें, 4 = जोखिम में सहज)"
+      },
+      "options": {
+        "1": {"en": "Avoid all risk", "hi": "बिल्कुल जोखिम नहीं"},
+        "2": {"en": "Cautious", "hi": "सतर्क"},
+        "3": {"en": "Balanced", "hi": "संतुलित"},
+        "4": {"en": "Comfortable", "hi": "सहज"}
+      }
+    },
+    {
+      "id": "co_1",
+      "construct": "psy_cooperation",
+      "research_ref": "Berg, Dickhaut & McCabe (1995) trust game",
+      "type": "binary_choice",
+      "scoring": {"A": 0.3, "B": 0.9},
+      "prompts": {
+        "en": "A neighbor asks to borrow your tools. They've returned things on time before. Do you: (A) Politely refuse, or (B) Lend them.",
+        "hi": "एक पड़ोसी आपके उपकरण उधार मांगता है। उन्होंने पहले समय पर चीजें लौटाई हैं। आप: (A) विनम्रता से मना करेंगे, या (B) उधार देंगे।"
+      },
+      "options": {
+        "A": {"en": "Politely refuse", "hi": "विनम्रता से मना करें"},
+        "B": {"en": "Lend them", "hi": "उधार दें"}
+      }
+    },
+    {
+      "id": "co_2",
+      "construct": "psy_cooperation",
+      "research_ref": "Big Five Agreeableness (Goldberg, 1992)",
+      "type": "scale_4",
+      "scoring": {"1": 0.2, "2": 0.5, "3": 0.75, "4": 0.95},
+      "prompts": {
+        "en": "Helping others when they are in difficulty is important to me.",
+        "hi": "जब कोई मुश्किल में हो तो उसकी मदद करना मेरे लिए महत्वपूर्ण है।"
+      },
+      "options": {
+        "1": {"en": "Strongly disagree", "hi": "बिल्कुल असहमत"},
+        "2": {"en": "Disagree", "hi": "असहमत"},
+        "3": {"en": "Agree", "hi": "सहमत"},
+        "4": {"en": "Strongly agree", "hi": "बिल्कुल सहमत"}
+      }
+    },
+    {
+      "id": "nu_1",
+      "construct": "psy_numeracy",
+      "research_ref": "Lipkus, Samsa & Rimer (2001) numeracy scale; Klinger 2013 Sec 4.2",
+      "type": "binary_choice",
+      "scoring": {"A": 0.0, "B": 1.0},
+      "prompts": {
+        "en": "If you save INR 200 every week for 6 months, roughly how much will you have?",
+        "hi": "यदि आप 6 महीने तक हर सप्ताह 200 रुपये बचाते हैं, तो लगभग कितना होगा?"
+      },
+      "options": {
+        "A": {"en": "Around INR 2,000", "hi": "लगभग 2,000 रुपये"},
+        "B": {"en": "Around INR 5,000", "hi": "लगभग 5,000 रुपये"}
+      }
+    },
+    {
+      "id": "nu_2",
+      "construct": "psy_numeracy",
+      "research_ref": "Banks & Oldfield (2007), financial-literacy style item",
+      "type": "binary_choice",
+      "scoring": {"A": 1.0, "B": 0.0},
+      "prompts": {
+        "en": "A loan of INR 10,000 at 12% per year. Roughly what is the interest in 1 year?",
+        "hi": "10,000 रुपये का ऋण 12% प्रति वर्ष पर। 1 साल में लगभग कितना ब्याज होगा?"
+      },
+      "options": {
+        "A": {"en": "INR 1,200", "hi": "1,200 रुपये"},
+        "B": {"en": "INR 12,000", "hi": "12,000 रुपये"}
+      }
+    },
+    {
+      "id": "sr_1",
+      "construct": "psy_stress_response",
+      "research_ref": "Connor-Davidson Resilience Scale (CD-RISC, Connor 2003)",
+      "type": "binary_choice",
+      "scoring": {"A": 0.3, "B": 0.9},
+      "prompts": {
+        "en": "Your shop has very few customers this month. Do you: (A) Wait and hope it improves, or (B) Try a new product or location.",
+        "hi": "इस महीने आपकी दुकान पर बहुत कम ग्राहक हैं। आप: (A) इंतज़ार करेंगे और सुधार की उम्मीद करेंगे, या (B) कोई नया उत्पाद या जगह आज़माएंगे।"
+      },
+      "options": {
+        "A": {"en": "Wait and hope", "hi": "इंतज़ार करेंगे"},
+        "B": {"en": "Try something new", "hi": "कुछ नया आज़माएंगे"}
+      }
+    },
+    {
+      "id": "sr_2",
+      "construct": "psy_stress_response",
+      "research_ref": "Big Five Conscientiousness — planning facet",
+      "type": "scale_4",
+      "scoring": {"1": 0.15, "2": 0.45, "3": 0.7, "4": 0.95},
+      "prompts": {
+        "en": "When something unexpected goes wrong, I usually have a backup plan.",
+        "hi": "जब कोई अनपेक्षित समस्या आती है, तो मेरे पास आमतौर पर कोई बैकअप योजना होती है।"
+      },
+      "options": {
+        "1": {"en": "Strongly disagree", "hi": "बिल्कुल असहमत"},
+        "2": {"en": "Disagree", "hi": "असहमत"},
+        "3": {"en": "Agree", "hi": "सहमत"},
+        "4": {"en": "Strongly agree", "hi": "बिल्कुल सहमत"}
+      }
+    }
+  ]
+}

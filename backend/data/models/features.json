@@ -1,0 +1,17 @@
+[
+  "avg_monthly_inflow",
+  "income_regularity",
+  "savings_ratio",
+  "merchant_diversity",
+  "discretionary_spend_ratio",
+  "emi_count",
+  "atm_withdrawal_ratio",
+  "p2p_transfer_ratio",
+  "psy_time_discount",
+  "psy_risk_tolerance",
+  "psy_cooperation",
+  "psy_numeracy",
+  "psy_stress_response",
+  "age",
+  "dependents"
+]

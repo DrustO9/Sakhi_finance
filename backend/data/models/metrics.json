@@ -1,0 +1,24 @@
+{
+  "auc": 0.6744765878624146,
+  "n_train": 4800,
+  "n_test": 1200,
+  "default_rate_train": 0.3179166666666667,
+  "default_rate_test": 0.3175,
+  "feature_importance": {
+    "avg_monthly_inflow": 600.0894289016724,
+    "income_regularity": 1615.5292372703552,
+    "savings_ratio": 1646.5932488441467,
+    "merchant_diversity": 514.8876781463623,
+    "discretionary_spend_ratio": 1337.2066984176636,
+    "emi_count": 1070.1899418830872,
+    "atm_withdrawal_ratio": 635.8158297538757,
+    "p2p_transfer_ratio": 423.5493097305298,
+    "psy_time_discount": 1284.842649936676,
+    "psy_risk_tolerance": 478.79407930374146,
+    "psy_cooperation": 943.2939667701721,
+    "psy_numeracy": 507.2058382034302,
+    "psy_stress_response": 938.1975984573364,
+    "age": 314.82620000839233,
+    "dependents": 200.29053020477295
+  }
+}
