@@ -19,50 +19,27 @@ Plus an admin dashboard with SHAP visualization and model metrics.
 - **Audio:** eSpeak NG (open source, supports Hindi)
 - **No external services required.** Runs fully offline.
 
-## Setup — first time
+## Setup
+
+**👉 New here? Follow [SETUP.md](SETUP.md)** — step-by-step clone-to-run guide for teammates, with troubleshooting.
+
+Quick version:
 
 ```bash
-cd sakhi/backend
-python -m venv .venv
-# Windows:  .venv\Scripts\activate
-# macOS/Linux: source .venv/bin/activate
+# Clone
+git clone git@github.com:DrustO9/Sakhi_finance.git && cd Sakhi_finance
+
+# Backend (one terminal)
+cd backend && python -m venv .venv
+# activate venv: Windows = .venv\Scripts\activate ; macOS/Linux = source .venv/bin/activate
 pip install -r requirements.txt
-
-# 1. Generate synthetic training data + 4 sample UPI PDFs
-python scripts/generate_synthetic_data.py
-
-# 2. Train the LightGBM model
-python scripts/train_model.py
-
-# 3. (Optional) Generate Hindi/English audio for the psychometric test
-#    Requires espeak-ng installed system-wide. If missing, silent placeholders are written.
-python scripts/generate_audio.py
-```
-
-```bash
-cd sakhi/frontend
-npm install
-```
-
-## Run
-
-Two terminals:
-
-```bash
-# Terminal 1 — backend
-cd sakhi/backend
 uvicorn app.main:app --reload --port 8000
+
+# Frontend (another terminal)
+cd frontend && npm install && npm run dev
 ```
 
-```bash
-# Terminal 2 — frontend
-cd sakhi/frontend
-npm run dev
-```
-
-Then open **http://localhost:5173**.
-
-The dev server proxies `/api/*` to the backend, so there's no CORS dance.
+Then open **http://localhost:5173**. The model and sample PDFs are committed to the repo, so no training step is needed.
 
 ## Demo path (for the pitch)
 
